@@ -1,0 +1,11 @@
+创建虚拟环境
+python -m venv student-env
+
+开启虚拟环境
+student-venv\Scripts\activate
+
+关闭虚拟环境
+student-venv\Scripts\deactivate
+
+升级pip
+pip install --user --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
