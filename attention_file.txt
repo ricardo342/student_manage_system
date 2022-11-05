@@ -8,4 +8,4 @@ student-venv\Scripts\activate
 student-venv\Scripts\deactivate
 
 升级pip
-pip install --user --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install --user --no-warn-script-location --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple --user
