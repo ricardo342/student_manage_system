@@ -26,7 +26,7 @@ class Student(models.Model):
     qq = models.CharField(max_length=128, verbose_name="QQ")
     phone = models.CharField(max_length=128, verbose_name="电话")
     status = models.IntegerField(choices=STATUS_ITEMS, default=0, verbose_name="审核状态")
-    create_time = models.DateTimeField(auto_now_add=True, editable=False, verbose_name="创建时间")
+    created_time = models.DateTimeField(auto_now_add=True, editable=False, verbose_name="创建时间")
 
     def __str__(self):
         return '<Student: {0}>'.format(self.name)
