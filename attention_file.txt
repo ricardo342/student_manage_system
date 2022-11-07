@@ -3,9 +3,11 @@ python -m venv student-env
 
 开启虚拟环境
 student-venv\Scripts\activate
+source student-venv/bin/activate
 
 关闭虚拟环境
 student-venv\Scripts\deactivate
+source student-venv/bin/deactivate
 
 升级pip
 pip install --user --no-warn-script-location --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple --user
