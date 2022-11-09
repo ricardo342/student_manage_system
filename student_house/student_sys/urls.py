@@ -21,6 +21,6 @@ sys.path.append(os.path.dirname(sys.path[0]))
 from student_house.student.views import index
 
 urlpatterns = [
-    path(r'^$', index, name='index'),
+    path('index/', index, name='index'),
     path('admin/', admin.site.urls),
 ]
