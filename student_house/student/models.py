@@ -7,6 +7,10 @@ from django.db import models
 # Create your models here.
 
 class Student(models.Model):
+    # 省略其他代码
+    @classmethod
+    def get_all(cls):
+        return cls.objects.all()
     SEX_ITEMS = [
         (1, '男'),
         (2, '女'),
