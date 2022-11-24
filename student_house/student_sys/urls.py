@@ -18,9 +18,9 @@ import sys
 from django.contrib import admin
 from django.urls import path
 sys.path.append(os.path.dirname(sys.path[0]))
-from student_house.student.views import index
+from student_house.student.views import index, IndexView
 
 urlpatterns = [
-    path('index/', index, name='index'),
+    path('index/', IndexView.as_view(), name='index'),
     path('admin/', admin.site.urls),
 ]
